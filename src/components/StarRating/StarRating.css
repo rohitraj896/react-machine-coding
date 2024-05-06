@@ -1,0 +1,13 @@
+span {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.star::before {
+  content: "\2606";
+}
+
+.star.rated::before {
+  content: "\2605";
+  color: tomato;
+}
