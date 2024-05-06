@@ -3,15 +3,17 @@ import Pagination from "./components/Pagination/Pagination";
 import Home from "./components/Home/Home";
 import ProgressBar from "./components/Progressbar/ProgressBar";
 import Todo from "./components/ToDo/Todo";
+import TypeChecking from "./components/TypeChecking/TypeChecking";
 
 function App() {
   return (
     <div>
-      <nav className="flex justify-center gap-2 border border-black bg-green-300">
+      <nav className="flex justify-center gap-2 border border-black bg-green-300 h-auto">
         <a href="/">Home</a>
         <a href="/pagination">Pagination</a>
         <a href="/progress-bar">Progress-bar</a>
         <a href="/todo">Todo</a>
+        <a href="/type-checking">Type checking</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -20,6 +22,7 @@ function App() {
             <Route path="/pagination" element={<Pagination />}></Route>
             <Route path="/progress-bar" element={<ProgressBar />}></Route>
             <Route path="/todo" element={<Todo />}></Route>
+            <Route path="/type-checking" element={<TypeChecking />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
