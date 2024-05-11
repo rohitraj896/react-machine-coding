@@ -10,6 +10,8 @@ import Accordion from "./components/Accordion/Accordion";
 import ModalComponent from "./components/ModalComponent/ModalComponent";
 import Counter from "./components/Counter/Counter";
 import Carousel from "./components/Carousel/Carousel";
+import InputSearchDebounce from "./components/InputSearchDebounce/InputSearchDebounce";
+import DebouncedApi from "./components/DebouncedAPI/DebouncedApi";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <a href="/modal">Modal</a>
         <a href="/counter">Counter</a>
         <a href="/carousel">Carousel</a>
+        <a href="/debounced-input">Debounced-input</a>
+        <a href="/debounced-api">Debounced-api</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -41,6 +45,11 @@ function App() {
             <Route path="/modal" element={<ModalComponent />}></Route>
             <Route path="/counter" element={<Counter />}></Route>
             <Route path="/carousel" element={<Carousel />}></Route>
+            <Route
+              path="/debounced-input"
+              element={<InputSearchDebounce />}
+            ></Route>
+            <Route path="/debounced-api" element={<DebouncedApi />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
