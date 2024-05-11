@@ -8,6 +8,7 @@ import StarRating from "./components/StarRating/StarRating";
 import InfiniteScroll from "./components/InfiniteScroll/InfiniteScroll";
 import Accordion from "./components/Accordion/Accordion";
 import ModalComponent from "./components/ModalComponent/ModalComponent";
+import Counter from "./components/Counter/Counter";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <a href="/infinite-scroll">Infinite scroll</a>
         <a href="/accordion">Accordion</a>
         <a href="/modal">Modal</a>
+        <a href="/counter">Counter</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -35,6 +37,7 @@ function App() {
             <Route path="/infinite-scroll" element={<InfiniteScroll />}></Route>
             <Route path="/accordion" element={<Accordion />}></Route>
             <Route path="/modal" element={<ModalComponent />}></Route>
+            <Route path="/counter" element={<Counter />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
