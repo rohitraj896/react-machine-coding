@@ -9,6 +9,7 @@ import InfiniteScroll from "./components/InfiniteScroll/InfiniteScroll";
 import Accordion from "./components/Accordion/Accordion";
 import ModalComponent from "./components/ModalComponent/ModalComponent";
 import Counter from "./components/Counter/Counter";
+import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <a href="/accordion">Accordion</a>
         <a href="/modal">Modal</a>
         <a href="/counter">Counter</a>
+        <a href="/carousel">Carousel</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -38,6 +40,7 @@ function App() {
             <Route path="/accordion" element={<Accordion />}></Route>
             <Route path="/modal" element={<ModalComponent />}></Route>
             <Route path="/counter" element={<Counter />}></Route>
+            <Route path="/carousel" element={<Carousel />}></Route>
           </Routes>
         </BrowserRouter>
       </div>

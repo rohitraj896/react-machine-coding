@@ -5,7 +5,9 @@ const Modal = ({ isOpen, children, onClose }) => {
     <div className={`modal_container ${isOpen ? "open" : ""}`}>
       <div className="modal_section">
         {children}
-        <button onClick={onClose}>Close Modal</button>
+        <button className="close_button" onClick={onClose}>
+          Close Modal
+        </button>
       </div>
     </div>
   );
