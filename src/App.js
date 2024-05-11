@@ -5,6 +5,7 @@ import ProgressBar from "./components/Progressbar/ProgressBar";
 import Todo from "./components/ToDo/Todo";
 import TypeChecking from "./components/TypeChecking/TypeChecking";
 import StarRating from "./components/StarRating/StarRating";
+import InfiniteScroll from "./components/InfiniteScroll/InfiniteScroll";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <a href="/todo">Todo</a>
         <a href="/type-checking">Type checking</a>
         <a href="/star-rating">Star Rating</a>
+        <a href="/infinite-scroll">Infinite scroll</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -26,6 +28,7 @@ function App() {
             <Route path="/todo" element={<Todo />}></Route>
             <Route path="/type-checking" element={<TypeChecking />}></Route>
             <Route path="/star-rating" element={<StarRating />}></Route>
+            <Route path="/infinite-scroll" element={<InfiniteScroll />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
