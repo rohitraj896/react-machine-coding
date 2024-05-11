@@ -12,6 +12,7 @@ import Counter from "./components/Counter/Counter";
 import Carousel from "./components/Carousel/Carousel";
 import InputSearchDebounce from "./components/InputSearchDebounce/InputSearchDebounce";
 import DebouncedApi from "./components/DebouncedAPI/DebouncedApi";
+import ErrorBoundaryComponent from "./components/ErrorBoundary/ErrorBoundaryComponent";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <a href="/carousel">Carousel</a>
         <a href="/debounced-input">Debounced-input</a>
         <a href="/debounced-api">Debounced-api</a>
+        <a href="/error-boundary">Error Boundary</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -45,6 +47,10 @@ function App() {
             <Route path="/modal" element={<ModalComponent />}></Route>
             <Route path="/counter" element={<Counter />}></Route>
             <Route path="/carousel" element={<Carousel />}></Route>
+            <Route
+              path="/error-boundary"
+              element={<ErrorBoundaryComponent />}
+            ></Route>
             <Route
               path="/debounced-input"
               element={<InputSearchDebounce />}
