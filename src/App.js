@@ -13,6 +13,7 @@ import Carousel from "./components/Carousel/Carousel";
 import InputSearchDebounce from "./components/InputSearchDebounce/InputSearchDebounce";
 import DebouncedApi from "./components/DebouncedAPI/DebouncedApi";
 import ErrorBoundaryComponent from "./components/ErrorBoundary/ErrorBoundaryComponent";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -37,25 +38,32 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/pagination" element={<Pagination />}></Route>
-            <Route path="/progress-bar" element={<ProgressBar />}></Route>
-            <Route path="/todo" element={<Todo />}></Route>
-            <Route path="/type-checking" element={<TypeChecking />}></Route>
-            <Route path="/star-rating" element={<StarRating />}></Route>
-            <Route path="/infinite-scroll" element={<InfiniteScroll />}></Route>
-            <Route path="/accordion" element={<Accordion />}></Route>
-            <Route path="/modal" element={<ModalComponent />}></Route>
-            <Route path="/counter" element={<Counter />}></Route>
-            <Route path="/carousel" element={<Carousel />}></Route>
             <Route
               path="/error-boundary"
               element={<ErrorBoundaryComponent />}
             ></Route>
-            <Route
-              path="/debounced-input"
-              element={<InputSearchDebounce />}
-            ></Route>
-            <Route path="/debounced-api" element={<DebouncedApi />}></Route>
+
+            <Route element={<ProtectedRoute />}>
+              <Route path="/pagination" element={<Pagination />}></Route>
+              <Route path="/progress-bar" element={<ProgressBar />}></Route>
+              <Route path="/todo" element={<Todo />}></Route>
+              <Route path="/type-checking" element={<TypeChecking />}></Route>
+              <Route path="/star-rating" element={<StarRating />}></Route>
+              <Route
+                path="/infinite-scroll"
+                element={<InfiniteScroll />}
+              ></Route>
+              <Route path="/accordion" element={<Accordion />}></Route>
+              <Route path="/modal" element={<ModalComponent />}></Route>
+              <Route path="/counter" element={<Counter />}></Route>
+              <Route path="/carousel" element={<Carousel />}></Route>
+
+              <Route
+                path="/debounced-input"
+                element={<InputSearchDebounce />}
+              ></Route>
+              <Route path="/debounced-api" element={<DebouncedApi />}></Route>
+            </Route>
           </Routes>
         </BrowserRouter>
       </div>
