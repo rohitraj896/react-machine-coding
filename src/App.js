@@ -14,6 +14,7 @@ import InputSearchDebounce from "./components/InputSearchDebounce/InputSearchDeb
 import DebouncedApi from "./components/DebouncedAPI/DebouncedApi";
 import ErrorBoundaryComponent from "./components/ErrorBoundary/ErrorBoundaryComponent";
 import ProtectedRoute from "./components/ProtectedRoute";
+import FlightBooking from "./components/FlightBooking/FlightBooking";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <a href="/debounced-input">Debounced-input</a>
         <a href="/debounced-api">Debounced-api</a>
         <a href="/error-boundary">Error Boundary</a>
+        <a href="/flight-booking">Flight booking</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -57,7 +59,7 @@ function App() {
               <Route path="/modal" element={<ModalComponent />}></Route>
               <Route path="/counter" element={<Counter />}></Route>
               <Route path="/carousel" element={<Carousel />}></Route>
-
+              <Route path="/flight-booking" element={<FlightBooking />}></Route>
               <Route
                 path="/debounced-input"
                 element={<InputSearchDebounce />}
