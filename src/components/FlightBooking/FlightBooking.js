@@ -3,15 +3,15 @@ const todayDate = new Date().toISOString().split("T")[0];
 
 const FlightBooking = () => {
   const [tripType, setTripType] = useState("one-way");
-  const [startDate, setStartDate] = useState(todayDate);
-  const [endDate, setEndDate] = useState(startDate);
+  const [departureDate, setDepartureDate] = useState(todayDate);
+  const [returnDate, setReturnDate] = useState(departureDate);
 
-  const handleStartDate = e => {
-    setStartDate(e.target.value);
+  const handledepartureDate = e => {
+    setDepartureDate(e.target.value);
   };
 
-  const handleEndDate = e => {
-    setEndDate(e.target.value);
+  const handlereturnDate = e => {
+    setReturnDate(e.target.value);
   };
   const handleTripType = e => {
     setTripType(e.target.value);
@@ -20,10 +20,10 @@ const FlightBooking = () => {
   const bookedTicket = e => {
     e.preventDefault();
     if (tripType === "one-way") {
-      alert(`You booked ticket one-way on ${startDate}`);
+      alert(`You booked ticket one-way on ${departureDate}`);
     } else {
       alert(
-        `You booked ticket one-way on ${startDate} and return ticket on ${endDate}`
+        `You booked ticket one-way on ${departureDate} and return ticket on ${returnDate}`
       );
     }
   };
@@ -51,13 +51,17 @@ const FlightBooking = () => {
         </label>
 
         <div>
-          <input type="date" min={todayDate} onChange={handleStartDate} /> One
-          way
+          <input type="date" min={todayDate} onChange={handledepartureDate} />{" "}
+          One way
         </div>
 
         {tripType === "return" && (
           <div>
-            <input type="date" min={startDate} onChange={handleEndDate} />
+            <input
+              type="date"
+              min={departureDate}
+              onChange={handlereturnDate}
+            />
             Return
           </div>
         )}
