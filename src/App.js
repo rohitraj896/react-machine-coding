@@ -15,6 +15,7 @@ import DebouncedApi from "./components/DebouncedAPI/DebouncedApi";
 import ErrorBoundaryComponent from "./components/ErrorBoundary/ErrorBoundaryComponent";
 import ProtectedRoute from "./components/ProtectedRoute";
 import FlightBooking from "./components/FlightBooking/FlightBooking";
+import StopWatch from "./components/StopWatch/StopWatch";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <a href="/debounced-api">Debounced-api</a>
         <a href="/error-boundary">Error Boundary</a>
         <a href="/flight-booking">Flight booking</a>
+        <a href="/stop-watch">Stop watch</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -65,6 +67,7 @@ function App() {
                 element={<InputSearchDebounce />}
               ></Route>
               <Route path="/debounced-api" element={<DebouncedApi />}></Route>
+              <Route path="/stop-watch" element={<StopWatch />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
