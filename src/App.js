@@ -17,11 +17,12 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import FlightBooking from "./components/FlightBooking/FlightBooking";
 import StopWatch from "./components/StopWatch/StopWatch";
 import TrafficSignal from "./components/TrafficSignal/TrafficSignal";
+import MultiLang from "./components/MultiLang/MultiLang";
 
 function App() {
   return (
     <div>
-      <nav className="flex justify-center gap-2 border border-black bg-green-300 h-auto">
+      <nav className="flex justify-center gap-2 border border-black bg-green-300">
         <a href="/">Home</a>
         <a href="/pagination">Pagination</a>
         <a href="/progress-bar">Progress-bar</a>
@@ -39,6 +40,7 @@ function App() {
         <a href="/flight-booking">Flight booking</a>
         <a href="/stop-watch">Stop watch</a>
         <a href="/traffic-signal">Traffic Signal</a>
+        <a href="/multi-lang">Multi Lang</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -71,6 +73,7 @@ function App() {
               <Route path="/debounced-api" element={<DebouncedApi />}></Route>
               <Route path="/stop-watch" element={<StopWatch />}></Route>
               <Route path="/traffic-signal" element={<TrafficSignal />}></Route>
+              <Route path="/multi-lang" element={<MultiLang />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
