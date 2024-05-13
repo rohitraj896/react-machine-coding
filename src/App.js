@@ -16,6 +16,7 @@ import ErrorBoundaryComponent from "./components/ErrorBoundary/ErrorBoundaryComp
 import ProtectedRoute from "./components/ProtectedRoute";
 import FlightBooking from "./components/FlightBooking/FlightBooking";
 import StopWatch from "./components/StopWatch/StopWatch";
+import TrafficSignal from "./components/TrafficSignal/TrafficSignal";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <a href="/error-boundary">Error Boundary</a>
         <a href="/flight-booking">Flight booking</a>
         <a href="/stop-watch">Stop watch</a>
+        <a href="/traffic-signal">Traffic Signal</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -68,6 +70,7 @@ function App() {
               ></Route>
               <Route path="/debounced-api" element={<DebouncedApi />}></Route>
               <Route path="/stop-watch" element={<StopWatch />}></Route>
+              <Route path="/traffic-signal" element={<TrafficSignal />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>

@@ -22,10 +22,12 @@ export default function StopWatch() {
       clearInterval(timer);
     };
   }, [running]);
+
   const handleReset = () => {
     setTime(0);
     setRunning(false);
   };
+
   const formatTime = time => {
     const hours = Math.floor(time / 3600)
       .toString()
@@ -39,6 +41,7 @@ export default function StopWatch() {
 
     return `${hours}:${minutes}:${seconds}`;
   };
+
   return (
     <div className="App">
       <h1>Stop watch</h1>
