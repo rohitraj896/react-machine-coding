@@ -19,11 +19,14 @@ import StopWatch from "./components/StopWatch/StopWatch";
 import TrafficSignal from "./components/TrafficSignal/TrafficSignal";
 import MultiLang from "./components/MultiLang/MultiLang";
 import SessionTimeout from "./components/SessionTimeout/SessionTimeout";
+import UploadFileProgress from "./components/UploadFileProgress/UploadFileProgress";
+import DarkMode from "./components/DarkMode/DarkMode";
+import DarkModeCAPI from "./components/DarkMode/DarkModeCAPI/DarkModeCAPI";
 
 function App() {
   return (
     <div>
-      <nav className="flex justify-center gap-2 border border-black bg-green-300">
+      <nav className="flex flex-wrap gap-2 border border-black bg-green-300">
         <a href="/">Home</a>
         <a href="/pagination">Pagination</a>
         <a href="/progress-bar">Progress-bar</a>
@@ -43,6 +46,9 @@ function App() {
         <a href="/traffic-signal">Traffic Signal</a>
         <a href="/multi-lang">Multi Lang</a>
         <a href="/session-timeout">Session Timeout</a>
+        <a href="/upload-file-progress">Upload file progress</a>
+        <a href="/dark-mode">Dark mode</a>
+        <a href="dark-mode-capi">Dark mode CAPI</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -80,6 +86,12 @@ function App() {
                 path="/session-timeout"
                 element={<SessionTimeout />}
               ></Route>
+              <Route
+                path="/upload-file-progress"
+                element={<UploadFileProgress />}
+              ></Route>
+              <Route path="/dark-mode" element={<DarkMode />}></Route>
+              <Route path="/dark-mode-capi" element={<DarkModeCAPI />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
