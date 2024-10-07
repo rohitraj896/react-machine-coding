@@ -16,7 +16,6 @@ const InputSearchDebounce = () => {
   };
 
   const debouncedFunction = debounce(value => {
-    console.log(`entered value ${value}`);
     setDisplayValue(value);
   }, 2000);
 

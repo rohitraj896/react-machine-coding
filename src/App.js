@@ -22,6 +22,7 @@ import SessionTimeout from "./components/SessionTimeout/SessionTimeout";
 import UploadFileProgress from "./components/UploadFileProgress/UploadFileProgress";
 import DarkMode from "./components/DarkMode/DarkMode";
 import DarkModeCAPI from "./components/DarkMode/DarkModeCAPI/DarkModeCAPI";
+import ForwardRef from "./components/ForwardRef/ForwardRef";
 
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
         <a href="/session-timeout">Session Timeout</a>
         <a href="/upload-file-progress">Upload file progress</a>
         <a href="/dark-mode">Dark mode</a>
-        <a href="dark-mode-capi">Dark mode CAPI</a>
+        <a href="/dark-mode-capi">Dark mode CAPI</a>
+        <a href="/forward-ref">Forward Ref</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -92,6 +94,7 @@ function App() {
               ></Route>
               <Route path="/dark-mode" element={<DarkMode />}></Route>
               <Route path="/dark-mode-capi" element={<DarkModeCAPI />}></Route>
+              <Route path="/forward-ref" element={<ForwardRef />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
