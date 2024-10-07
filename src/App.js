@@ -23,6 +23,7 @@ import UploadFileProgress from "./components/UploadFileProgress/UploadFileProgre
 import DarkMode from "./components/DarkMode/DarkMode";
 import DarkModeCAPI from "./components/DarkMode/DarkModeCAPI/DarkModeCAPI";
 import ForwardRef from "./components/ForwardRef/ForwardRef";
+import HOC from "./components/HOC/HOC";
 
 function App() {
   return (
@@ -51,6 +52,8 @@ function App() {
         <a href="/dark-mode">Dark mode</a>
         <a href="/dark-mode-capi">Dark mode CAPI</a>
         <a href="/forward-ref">Forward Ref</a>
+        <a href="/hoc">HOC</a>
+        <a href="/hoc">HOC</a>
       </nav>
       <div>
         <BrowserRouter>
@@ -95,6 +98,7 @@ function App() {
               <Route path="/dark-mode" element={<DarkMode />}></Route>
               <Route path="/dark-mode-capi" element={<DarkModeCAPI />}></Route>
               <Route path="/forward-ref" element={<ForwardRef />}></Route>
+              <Route path="/hoc" element={<HOC />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
