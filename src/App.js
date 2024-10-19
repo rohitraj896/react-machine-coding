@@ -31,31 +31,31 @@ function App() {
     <div>
       <BrowserRouter>
         <nav className="flex flex-wrap gap-2 border border-black bg-green-300">
-          <Link href="/">Home</Link>
-          <Link href="/pagination">Pagination</Link>
-          <Link href="/progress-bar">Progress-bar</Link>
-          <Link href="/todo">Todo</Link>
-          <Link href="/type-checking">Type checking</Link>
-          <Link href="/star-rating">Star Rating</Link>
-          <Link href="/infinite-scroll">Infinite scroll</Link>
-          <Link href="/accordion">Accordion</Link>
-          <Link href="/modal">Modal</Link>
-          <Link href="/counter">Counter</Link>
-          <Link href="/carousel">Carousel</Link>
-          <Link href="/debounced-input">Debounced-input</Link>
-          <Link href="/debounced-api">Debounced-api</Link>
-          <Link href="/error-boundary">Error Boundary</Link>
-          <Link href="/flight-booking">Flight booking</Link>
-          <Link href="/stop-watch">Stop watch</Link>
-          <Link href="/traffic-signal">Traffic Signal</Link>
-          <Link href="/multi-lang">Multi Lang</Link>
-          <Link href="/session-timeout">Session Timeout</Link>
-          <Link href="/upload-file-progress">Upload file progress</Link>
-          <Link href="/dark-mode">Dark mode</Link>
-          <Link href="/dark-mode-capi">Dark mode CAPI</Link>
-          <Link href="/forward-ref">Forward Ref</Link>
-          <Link href="/hoc">HOC</Link>
-          <Link href="/custom-hook">Custom Hook</Link>
+          <Link to="/">Home</Link>
+          <Link to="/pagination">Pagination</Link>
+          <Link to="/progress-bar">Progress-bar</Link>
+          <Link to="/todo">Todo</Link>
+          <Link to="/type-checking">Type checking</Link>
+          <Link to="/star-rating">Star Rating</Link>
+          <Link to="/infinite-scroll">Infinite scroll</Link>
+          <Link to="/accordion">Accordion</Link>
+          <Link to="/modal">Modal</Link>
+          <Link to="/counter">Counter</Link>
+          <Link to="/carousel">Carousel</Link>
+          <Link to="/debounced-input">Debounced-input</Link>
+          <Link to="/debounced-api">Debounced-api</Link>
+          <Link to="/error-boundary">Error Boundary</Link>
+          <Link to="/flight-booking">Flight booking</Link>
+          <Link to="/stop-watch">Stop watch</Link>
+          <Link to="/traffic-signal">Traffic Signal</Link>
+          <Link to="/multi-lang">Multi Lang</Link>
+          <Link to="/session-timeout">Session Timeout</Link>
+          <Link to="/upload-file-progress">Upload file progress</Link>
+          <Link to="/dark-mode">Dark mode</Link>
+          <Link to="/dark-mode-capi">Dark mode CAPI</Link>
+          <Link to="/forward-ref">Forward Ref</Link>
+          <Link to="/hoc">HOC</Link>
+          <Link to="/custom-hook">Custom Hook</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
