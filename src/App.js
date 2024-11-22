@@ -25,6 +25,7 @@ import DarkModeCAPI from "./components/DarkMode/DarkModeCAPI/DarkModeCAPI";
 import ForwardRef from "./components/ForwardRef/ForwardRef";
 import HOC from "./components/HOC/HOC";
 import CustomHook from "./components/CustomHook/CustomHook";
+import CricketScore from "./components/CricketScore/CricketScore";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Link to="/forward-ref">Forward Ref</Link>
           <Link to="/hoc">HOC</Link>
           <Link to="/custom-hook">Custom Hook</Link>
+          <Link to="/cricket-score">Cricket Score</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -94,6 +96,7 @@ function App() {
             <Route path="/forward-ref" element={<ForwardRef />}></Route>
             <Route path="/hoc" element={<HOC />}></Route>
             <Route path="/custom-hook" element={<CustomHook />}></Route>
+            <Route path="/cricket-score" element={<CricketScore />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
